@@ -102,3 +102,5 @@ We revert the latest commit using git revert HEAD (revert the latest change,  an
 
 29. git reset: We reset our repository back to the specific commit using git reset commithash (commithash being the first 7 characters of the commit hash we found in the log):
 git reset 9a9add8
+
+30.git log --oneline
