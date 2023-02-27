@@ -1,3 +1,5 @@
+GIT BASICS
+
 git --version
 
 git config --global user.name "w3schools-test"
