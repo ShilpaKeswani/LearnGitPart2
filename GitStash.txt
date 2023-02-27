@@ -13,3 +13,9 @@
 10. git stash show stash@{1} ------> To see single stash
 11.git stash pop -------->To apply the recorded changes of your latest stash on the current working branch as well as remove that stash from the stash stack, run this command:
 
+12.You can also apply the latest stash without removing the stash from the stash stack like this:
+git stash apply
+
+13.git stash apply stash@{3}
+14.git stash clear
+15.git stash drop stash@{2}
