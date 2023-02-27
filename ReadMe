@@ -58,7 +58,7 @@ git branch -d emergency-fix
 git checkout master
 git merge hello-world-images
 
-
+===============================================================================================================
 
 We have already set up a local Git repo, we are going to push that to GitHub:
 
