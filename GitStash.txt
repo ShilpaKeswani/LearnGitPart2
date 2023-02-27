@@ -1,0 +1,15 @@
+1.sometimes Git doesn't allow you to switch branches without committing those changes. This is because you might lose the changes you made in your current branch or they may conflict with the destination branch
+
+2.At the same time, you can't commit the half-done feature branch.
+3.To help with this, you can use Git stashing. Stash means to store (changes) safely in a hidden place (the stash stack).
+
+4.Stashing the current working directory's staged or unstaged changes or untracked files and then storing them in the stash stack reverts the current working directory to the last commit.
+
+5. git stash or git stash --save --->To stash your staged and unstaged changes in the stash stack.         
+6. git stash -u ----->To stash your untracked files
+7. git stash list ---------> to list out all the stashes stored in the stash stack
+8. git stash show  ---------->By default git stash show shows the changes recorded in the latest stash
+9.  git stash show -u ----------> For untracked files
+10. git stash show stash@{1} ------> To see single stash
+11.git stash pop -------->To apply the recorded changes of your latest stash on the current working branch as well as remove that stash from the stash stack, run this command:
+
