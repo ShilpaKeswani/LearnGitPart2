@@ -98,3 +98,7 @@ we can use the -a option to see all local and remote branches:
 22.git branch -a
 
 We revert the latest commit using git revert HEAD (revert the latest change,  and then commit), adding the option --no-edit to skip the commit message editor (getting the default revert message): git revert HEAD --no-edit
+
+
+29. git reset: We reset our repository back to the specific commit using git reset commithash (commithash being the first 7 characters of the commit hash we found in the log):
+git reset 9a9add8
