@@ -94,3 +94,5 @@ git push origin
 
 we can use the -a option to see all local and remote branches:
 git branch -a
+
+We revert the latest commit using git revert HEAD (revert the latest change,  and then commit), adding the option --no-edit to skip the commit message editor (getting the default revert message): git revert HEAD --no-edit
