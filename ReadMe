@@ -1,32 +1,32 @@
 GIT AND GITHUB BASICS TUTORIAL
 
-git --version
+1.git --version
 
-git config --global user.name "w3schools-test"
+2.git config --global user.name "w3schools-test"
 git config --global user.email "test@w3schools.com"
 Note: Use global to set the username and e-mail for every repository on your computer.
 If you want to set the username/e-mail for just the current repo, you can remove global
 
-git status
+3.git status
 git status --short
 Tracked - files that Git knows about and are added to the repository
 Untracked - files that are in your working directory, but not added to the repository
 
 Staged files are files that are ready to be committed to the repository you are working on. 
 
-git add index.html
+4.git add index.html
 git add --all   
 git add -A
 
-git commit -m "First release of Hello World!"
+5.git commit -m "First release of Hello World!"
 
 We are ready move from stage to commit for our repo.
 Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point".
 It is a point in the project you can go back to if you find a bug, or want to make a change.
 
-git log				press q to quit log
+6.git log				press q to quit log
 
-git branch hello-world-images
+7.git branch hello-world-images
 
 Branches allow you to work on different parts of a project without impacting the main branch.
 When the work is complete, a branch can be merged with the main project.
@@ -35,41 +35,43 @@ You can even switch between branches and work on different projects without them
 The * beside master specifies that we are currently on that branch.checkout is the command used to check out a branch.
 Moving us from the current branch, to the one specified at the end of the command:
 
-git checkout hello-world-images
+8.git checkout hello-world-images
 
 // Make some changes in the file now and So we need to add both files to the Staging Environment for this branch: git add --all
 // So we will commit them to the branch: git commit -m 'Added image to Hello World'
 
-git checkout master
+9.git checkout master
 
-Shortcut to create a new branch and move to it 		git checkout -b emergency-fix
+Shortcut to create a new branch and move to it 		
 
-git add .
+10.git checkout -b emergency-fix
+
+11.git add .
 git commit -m "updated index.html with emergency fix"
 
 
 Now we merge the current branch (master) with emergency-fix:
-git merge emergency-fix
+12.git merge emergency-fix
 
 As master and emergency-fix are essentially the same now, we can delete emergency-fix, as it is no longer needed:
-git branch -d emergency-fix
+13.git branch -d emergency-fix
 
 //Merge Conflict
-git checkout master
-git merge hello-world-images
+14.git checkout master
+15.git merge hello-world-images
 
 ===============================================================================================================
 
 We have already set up a local Git repo, we are going to push that to GitHub:
 
-git remote add https://github.com/ShilpaKeswani/LearnGit.git
+16.git remote add https://github.com/ShilpaKeswani/LearnGit.git
 
 git remote add origin URL specifies that you are adding a remote repository, with the specified URL, 
 as an origin to your local Git repo.
 
-git push --set-upstream origin master
+17.git push --set-upstream origin master
 
-git stash
+18.git stash
 The git stash command takes your uncommitted changes (both staged and unstaged),
 saves them away for later use, and then reverts them from your working copy
 
@@ -79,7 +81,7 @@ With Git, you can do that with pull. pull is a combination of 2 different comman
 
 fetch gets all the changed history of a tracked branch/repo.
 
-git fetch origin
+19.git fetch origin
 
 Now that we have the recent changes, we can check our status:
 
@@ -87,12 +89,12 @@ merge combines the current branch, with a specified branch.
 git merge origin/master
 
 pull = fetch +merge
-git pull origin
+20.git pull origin
 
 //Do some changes to local repository , add the changes and then commit those changes. No Push those changes to github
-git push origin
+21.git push origin
 
 we can use the -a option to see all local and remote branches:
-git branch -a
+22.git branch -a
 
 We revert the latest commit using git revert HEAD (revert the latest change,  and then commit), adding the option --no-edit to skip the commit message editor (getting the default revert message): git revert HEAD --no-edit
